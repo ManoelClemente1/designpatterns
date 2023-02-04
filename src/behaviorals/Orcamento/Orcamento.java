@@ -1,6 +1,7 @@
 package behaviorals.Orcamento;
 
 import behaviorals.Orcamento.situacao.EmAnalise;
+import behaviorals.Orcamento.situacao.Finalizado;
 import behaviorals.Orcamento.situacao.SituacaoOrcamento;
 
 import java.math.BigDecimal;
@@ -54,4 +55,7 @@ public class Orcamento {
         return situacao;
     }
 
+    public boolean isFinalizado() {
+        return situacao instanceof Finalizado;
+    }
 }
